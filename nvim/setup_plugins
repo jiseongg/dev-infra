@@ -2,5 +2,9 @@
 
 SCRIPT_DIR="$(cd $(dirname $0); pwd)"
 
-cat $SCRIPT_DIR/init.plugin.vim \
-  >> ${XDG_DATA_HOME:-$HOME/.config/nvim/init.vim}
+INIT_VIM="${XDG_DATA_HOME:-$HOME/.config/nvim/init.vim}"
+
+for f in $SCRIPT_DIR/plugin_configs/*; do
+  cat $f >> $INIT_VIM
+done
+

@@ -1,4 +1,3 @@
 
-
 # nvim
 alias nvim_config="nvim ${XDG_DATA_HOME:-$HOME}/.config/nvim/init.vim"
