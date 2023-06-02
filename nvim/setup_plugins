@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR="$(cd $(dirname $0); pwd)"
+
+cat $SCRIPT_DIR/init.plugin.vim \
+  >> ${XDG_DATA_HOME:-$HOME/.config/nvim/init.vim}
