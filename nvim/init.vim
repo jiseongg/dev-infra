@@ -27,6 +27,8 @@ call plug#begin()
 
 Plug 'sainnhe/sonokai'
 Plug 'nvim-tree/nvim-tree.lua'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 call plug#end()
 

@@ -1,5 +1,7 @@
 
-""" nvim-tree
+" ----------------------------------- "
+" ---- "nvim-tree configuration" ---- "
+" ----------------------------------- "
 
 lua << EOF
 -- nvim-tree
@@ -33,4 +35,5 @@ require("nvim-tree").setup({
   },
 })
 EOF
+
 
