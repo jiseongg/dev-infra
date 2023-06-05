@@ -29,6 +29,7 @@ Plug 'sainnhe/sonokai'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'preservim/tagbar'
 
 call plug#end()
 
