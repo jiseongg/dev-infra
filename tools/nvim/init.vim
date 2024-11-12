@@ -21,7 +21,7 @@ set ttyfast                 " Speed up scrolling in Vim
 call plug#begin()
 
 Plug 'sainnhe/sonokai'
-Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 call plug#end()
 
