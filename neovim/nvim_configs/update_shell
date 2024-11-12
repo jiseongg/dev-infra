@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-SCRIPT_DIR="$(cd $(dirname $0); pwd)"
-
-if ! grep '### nvim configuration ###' ${HOME}/.zshrc >/dev/null 2>&1; then
-  cat $SCRIPT_DIR/zshrc >> ${HOME}/.zshrc
-fi

@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# LazyVim
+script_dir=$(cd $(dirname $0); pwd)
 
+# NeoVim
 brew update
 brew install neovim
 
@@ -18,5 +19,13 @@ for nvim_config in ${EXISTING_NVIM_CONFIGS[@]}; do
   fi
 done
 
-git clone https://github.com/LazyVim/starter $HOME/.config/nvim
-rm -rf $HOME/.config/nvim/.git
+git config --global core.editor nvim
+git config --global difftool.nvimdiff.cmd 'nvim -d "$LOCAL" "$REMOTE"'
+git config --global diff.tool nvimdiff
+
+
+# LazyVim
+brew install fd ripgrep lazygit luarocks
+
+cp -rf $script_dir/configs $HOME/.config/nvim
+
