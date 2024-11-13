@@ -5,6 +5,23 @@ return {
   { "folke/trouble.nvim", version = false },
   { "folke/todo-comments.nvim", version = false, opts = {} },
 
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    version = false,
+    opts = {
+      filesystem = {
+        bind_to_cwd = false,
+        follow_current_file = { enabled = true },
+        use_libuv_file_watcher = true,
+        filtered_items = {
+          hide_dotfiles = false,
+          hide_gitignored = true,
+          hide_by_name = { ".git" },
+        },
+      },
+    },
+  },
+
   { "akinsho/toggleterm.nvim", version = false },
 
   {
