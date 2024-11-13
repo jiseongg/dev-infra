@@ -23,3 +23,5 @@ sed -i "" \
 cp -rf $SHELL_DIR/zfunc $HOME/.zfunc
 cat $SHELL_DIR/zshrc >> $HOME/.zshrc
 
+# tmux.conf
+cp -rf $SHELL_DIR/tmux.conf $HOME/.tmux.conf

@@ -2,5 +2,10 @@
 
 # --------------------------- Custom Configurations ---------------------------
 
+# shell function
 fpath=( ${HOME}/.zfunc "${fpath[@]}" )
 autoload -U ${HOME}/.zfunc/*(.:t)
+
+
+# tmux
+alias tmux="tmux -u"

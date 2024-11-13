@@ -22,8 +22,6 @@ return {
     },
   },
 
-  { "akinsho/toggleterm.nvim", version = false },
-
   {
     "nvim-telescope/telescope.nvim",
     keys = {

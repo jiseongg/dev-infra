@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-script_dir=$(cd $(dirname $0); pwd)
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
 
 # NeoVim
 brew update
@@ -27,5 +27,5 @@ git config --global diff.tool nvimdiff
 # LazyVim
 brew install fd ripgrep lazygit luarocks
 
-cp -rf $script_dir/configs $HOME/.config/nvim
+cp -rf $SCRIPT_DIR/configs $HOME/.config/nvim
 
