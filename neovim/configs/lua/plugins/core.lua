@@ -3,21 +3,22 @@ return {
   { "folke/lazy.nvim", version = false },
   { "LazyVim/LazyVim", version = false },
   { "folke/trouble.nvim", version = false },
+  { "folke/todo-comments.nvim", version = false, opts = {} },
 
-  -- change some telescope options and a keymap to browse plugin files
+  { "akinsho/toggleterm.nvim", version = false },
+
   {
     "nvim-telescope/telescope.nvim",
     keys = {
-      -- add a keymap to browse plugin files
-      -- stylua: ignore
       {
         "<leader>fp",
-        function() require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root }) end,
+        function()
+          require("telescope.builtin").find_files({ cwd = require("lazy.core.config").options.root })
+        end,
         desc = "Find Plugin File",
       },
     },
 
-    -- change some options
     opts = {
       defaults = {
         layout_strategy = "horizontal",
