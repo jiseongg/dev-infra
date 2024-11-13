@@ -14,4 +14,4 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
 
 # tmux
-brew install tmux
+brew install iterm2 tmux
