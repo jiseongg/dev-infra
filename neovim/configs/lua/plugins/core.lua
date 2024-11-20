@@ -6,6 +6,13 @@ return {
   { "folke/todo-comments.nvim", version = false, opts = {} },
 
   {
+    "neovim/nvim-lspconfig",
+    opts = {
+      inlay_hints = { enabled = false },
+    },
+  },
+
+  {
     "nvim-neo-tree/neo-tree.nvim",
     version = false,
     opts = {
