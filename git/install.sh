@@ -30,6 +30,6 @@ while true; do
 EOL
 
   git config --global \
-    includeif.gitdir:$HOME/$repo_type/$config_name.path \
+    includeif.gitdir:$HOME/$repo_type/$config_name/.path \
     $config_file
 done
