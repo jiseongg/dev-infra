@@ -55,4 +55,15 @@ return {
 
   { import = "lazyvim.plugins.extras.lang.json" },
   { import = "lazyvim.plugins.extras.lang.yaml" },
+
+  {
+    "folke/which-key.nvim",
+    opts = {
+      icons = {
+        rules = {
+          { plugin = "copilot.lua", icon = " ", color = "orange" },
+        },
+      },
+    },
+  },
 }
