@@ -5,3 +5,4 @@
 local opt = vim.opt
 
 opt.ignorecase = true
+opt.undofile = false
