@@ -7,6 +7,7 @@ return {
 
   {
     "neovim/nvim-lspconfig",
+    require("lspconfig").protols.setup({}),
     opts = {
       inlay_hints = { enabled = false },
     },
