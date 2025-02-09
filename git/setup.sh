@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-brew install git
-
 git config --global core.pager "less -F -X"
 
 echo -e "\nStart setting up git configuration!"
