@@ -51,20 +51,4 @@ return {
       },
     },
   },
-  { import = "lazyvim.plugins.extras.ui.mini-animate" },
-  { import = "lazyvim.plugins.extras.ui.mini-starter" },
-
-  { import = "lazyvim.plugins.extras.lang.json" },
-  { import = "lazyvim.plugins.extras.lang.yaml" },
-
-  {
-    "folke/which-key.nvim",
-    opts = {
-      icons = {
-        rules = {
-          { plugin = "copilot.lua", icon = " ", color = "orange" },
-        },
-      },
-    },
-  },
 }
