@@ -27,7 +27,7 @@ for dir in "$PARENT_DIR"/*; do
 
 	rel="${dir#$PARENT_DIR/}"
 
-	cnt=$(git -C "$dir" log --all --author="$AUTHOR" --since="$YEAR-01-01" \
+	cnt=$(git -C "$dir" log --all --author="$AUTHOR" --since="$YEAR-01-01" --until="$YEAR-12-31" \
 		--pretty=format:%h 2>/dev/null | wc -l | tr -d ' ')
 	paths[idx]="$rel"
 	counts[idx]="$cnt"
