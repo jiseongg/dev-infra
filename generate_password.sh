@@ -45,4 +45,5 @@ else
 	# Just print to console
 	echo "Generated password for ${SERVICE}:"
 	echo "$ENTRY"
+	echo "Note: No target file specified. Please update your password records manually."
 fi
